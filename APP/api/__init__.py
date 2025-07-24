@@ -2,7 +2,7 @@ from flask import Flask
 from firebase_admin import credentials, initialize_app
 
 # Initialiser Firebase avec les informations d'identification de service
-cred = credentials.Certificate("api/key.json")
+cred = credentials.Certificate("APP/api/key.json")
 default_app = initialize_app(cred, {
     'databaseURL': 'https://flutterapp-7d6c3-default-rtdb.europe-west1.firebasedatabase.app/'
 })
